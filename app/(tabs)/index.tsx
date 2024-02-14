@@ -154,12 +154,12 @@ export default function TabOneScreen() {
       <MapView
         style={styles.map}
         zoomControlEnabled
-        region={{
-          latitude: location?.coords.latitude || 0,
-          longitude: location?.coords.longitude || 0,
-          // latitudeDelta: 3, // Controls the zoom level (higher value = lower zoom)
-          // longitudeDelta: 3,
-        }}
+        // region={{
+        //   latitude: location?.coords.latitude || 0,
+        //   longitude: location?.coords.longitude || 0,
+        //   // latitudeDelta: 3, // Controls the zoom level (higher value = lower zoom)
+        //   // longitudeDelta: 3,
+        // }}
       >
         {/* Add markers or other map components as needed */}
         <Marker
