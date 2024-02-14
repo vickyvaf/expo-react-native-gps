@@ -36,6 +36,7 @@ export default function TabOneScreen() {
   };
 
   useEffect(() => {
+    if (count === 0) return;
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== "granted") {
